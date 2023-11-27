@@ -10,8 +10,7 @@ void selectionSort(int arr[], int n) {
             if (arr[j] < arr[minIndex]) {
                 minIndex = j;
             }
-        }
-        
+        }    
         // Swap the minimum element with the first element of the unsorted part
         temp = arr[minIndex];
         arr[minIndex] = arr[i];
@@ -19,9 +18,15 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-// Example usage
 int main() {
-    int arr[] = {64, 25, 12, 22, 11};
+    int arr[100] = {64, 25, 12, 22, 11};
+    
+    /**
+     * Calculates the size of the array and assigns it to the variable 'n'.
+     * 
+     * @param arr The array for which the size needs to be calculated.
+     * @return The size of the array.
+     */
     int n = sizeof(arr)/sizeof(arr[0]);
     
     selectionSort(arr, n);

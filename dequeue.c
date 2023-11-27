@@ -14,6 +14,12 @@ void initialize(Dequeue *dq) {
     dq->rear = -1;
 }
 
+/**
+ * Checks if the dequeue is full.
+ * 
+ * @param dq The dequeue to be checked.
+ * @return 1 if the dequeue is full, 0 otherwise.
+ */
 int isFull(Dequeue *dq) {
     return (dq->front == 0 && dq->rear == MAX_SIZE - 1) || (dq->front == dq->rear + 1);
 }
