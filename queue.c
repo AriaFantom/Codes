@@ -11,22 +11,20 @@ typedef struct {
 
 /**
  * Initializes the queue by setting the front and rear indices to -1.
- * 
  * @param q Pointer to the queue to be initialized.
  */
-void init(Queue *q) {
-    q->front = -1;
+void init(Queue *q) { 
+    q->front = -1; 
     q->rear = -1;
 }
 
 /**
  * Checks if the queue is empty.
- * 
  * @param q Pointer to the queue to be checked.
  * @return 1 if the queue is empty, 0 otherwise.
  */
 int is_empty(Queue *q) {
-    return q->front == -1;
+    return q->front == -1; 
 }
 
 /**

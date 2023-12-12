@@ -1,25 +1,8 @@
 #include <stdio.h>
 
-/**
- * Performs a binary search on a sorted array to find the index of a given element.
- *
- * @param arr The sorted array to search in.
- * @param first The index of the first element in the array.
- * @param last The index of the last element in the array.
- * @param x The element to search for.
- * @return The index of the element if found, -1 otherwise.
- */
 int binarySearch(int arr[], int first, int last, int x)
 {
-    /**
-     * Performs binary search on a sorted array to find the index of a given element.
-     *
-     * @param arr The sorted array to search in.
-     * @param first The starting index of the search range.
-     * @param last The ending index of the search range.
-     * @param x The element to search for.
-     * @return The index of the element if found, -1 otherwise.
-     */
+
     while (first <= last)
     {
         // Calculate the middle index of the search range
@@ -46,9 +29,6 @@ int binarySearch(int arr[], int first, int last, int x)
 
 int main()
 {
-    /**
-     * @brief An array of integers used for binary search.
-     */
     int arr[] = {2, 3, 4, 10, 40};
 
     // Calculate the number of elements in the array
@@ -56,22 +36,11 @@ int main()
 
     /**
      * This code snippet prompts the user to enter an element and stores it in the variable 'x'.
-     *
-     * @param x The variable to store the user input.
      */
     int x;
     printf("Enter the element");
     scanf("%d", &x);
 
-    /**
-     * Performs a binary search on a sorted array to find the index of a given element.
-     *
-     * @param arr The sorted array to search in.
-     * @param first The index of the first element in the array.
-     * @param last The index of the last element in the array.
-     * @param x The element to search for.
-     * @return The index of the element if found, -1 otherwise.
-     */
     int last = n - 1;
     int first = 0;
     int result = binarySearch(arr, first, last, x);
